@@ -1,7 +1,6 @@
-import tkinter as tk
-from validacionapp import ValidacionApp
+class SumaN:
+    def __init__(self, n):
+        self.n = n
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = ValidacionApp(root)
-    root.mainloop()
+    def calcular_suma(self):
+        return sum(range(1, self.n + 1))
